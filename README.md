@@ -1,2 +1,2 @@
-# Just simple script for bio
+# Just simple scripts for bio
 
