@@ -1,5 +1,5 @@
 import argparse
-name = ''
+
 def bestblast(blast, best_hit_blast):
     name = ''
     with open(blast, 'r') as f1:
