@@ -31,7 +31,7 @@ def splitFA2parts(input, num):
                 sum_size += length
                 partdb[line2] = dic[line2]
                 if sum_size > size_per_file(input, num) * i:
-                    with open("part_test" + str(i) + ".fasta", 'w') as file:
+                    with open("part_" + str(i) + ".fasta", 'w') as file:
                         for line3 in sorted(partdb.keys()):
                             partdb[line3] = "".join(partdb[line3])
                             partdb[line3] = partdb[line3].strip()
