@@ -4,6 +4,7 @@ dic, name, sequence = {}, '', []
 def GC_content(input,output):
     with open(input, 'r') as f1:
         for line in f1:
+            line = line.
             if line.startswith('>'):
                name = line
                sequence = []
