@@ -10,7 +10,7 @@ def getfasta(genelist, database, output):
                name = line1[1:]
                dic[name] = ''
             else:
-            dic[name] += line
+               dic[name] += line
     with open(genelist, 'r') as f2:
         for geneID in f2:
             query.append(geneID.strip())
