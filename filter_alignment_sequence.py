@@ -16,7 +16,7 @@ for i in range(len(seq[0])):
     temp = ''
     for j in seq:
         temp += j[i]
-    if float(temp.count('-')) / float(len(temp)) > 0.5:
+    if float(temp.count('-')) / float(len(temp)) >= 0.5:
         remove_index.append(i)
 
 new_seq = []
