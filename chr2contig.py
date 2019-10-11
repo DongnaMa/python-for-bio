@@ -9,7 +9,7 @@ with open(sys.argv[1]) as f1:
            if line.startswith('>'):
                pass
            else:
-               seq = re.sub('N+', '\n'', line)
+               seq = re.sub('N+', '\n', line)
                f2.write(seq+'\n')
 with open('test.fa', 'r') as f3:
     with open(sys.argv[2], 'w') as f4:
