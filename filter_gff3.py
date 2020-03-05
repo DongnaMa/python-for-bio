@@ -1,6 +1,6 @@
 '''
 This script can Filter gff3 files
-use: python filter_gff3.py ID.txt input.gff3 out.gff3
+usage: python filter_gff3.py ID.txt input.gff3 out.gff3
 '''
 import sys
 import re
