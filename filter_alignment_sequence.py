@@ -35,7 +35,7 @@ def filter_alignment_sequence(input,missing_rate,output):
 def main():
     parser = argparse.ArgumentParser(description='From concatenated alignment to extract conserved sites')
     parser.add_argument('-i', '--input', type=str, metavar='', required=True, help='alignment fasta file')
-    parser.add_argument('-m', '--missing_rate', type=float, metavar='', required=True, help='cutoff missing rate:default 0.5', default=0.5)
+    parser.add_argument('-m', '--missing_rate', type=float, metavar='', required=False, help='cutoff missing rate:default 0.5', default=0.5)
     parser.add_argument('-o', '--output', type=str, metavar='', required=True, help='output file')
     args = parser.parse_args()
     filter_alignment_sequence(args.input, args.missing_rate, args.output)
