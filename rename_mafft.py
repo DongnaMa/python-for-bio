@@ -1,6 +1,6 @@
 """
 This script is used to rename the fasta file then perform mafft comparison and merge
-usage: python rename_mafft.py name
+usage: python rename_mafft.py name.txt
 """
 import sys
 import os
