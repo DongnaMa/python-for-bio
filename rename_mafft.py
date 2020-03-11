@@ -12,7 +12,7 @@ with open(sys.argv[1], 'r') as fp1:
         l1 = l1.strip()
         query.append(l1)
 
-path = "/home/stu_liyiying/project/5_baixiangguo/2_busco/Sc_gene/fasta"
+path = "/home/project/fasta"
 files = os.listdir(path)
 os.mkdir('re_name_result')
 
