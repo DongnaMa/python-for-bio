@@ -29,7 +29,7 @@ def sliding_window(input,window_size,step_length,output):
                     i += 1
 
 def main():
-    parser = argparse.ArgumentParser(description='This script is used to sliding_window')
+    parser = argparse.ArgumentParser(description='This script is used to sliding_window to stat the GC content')
     parser.add_argument('-i', '--input', type=str, metavar='', required=True, help='input.fasta')
     parser.add_argument('-w', '--window_size', type=int, metavar='', required=True, help='window size')
     parser.add_argument('-s', '--step_length', type=int, metavar='', required=True, help='step length')
