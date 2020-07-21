@@ -12,7 +12,7 @@ with open(sys.argv[1], 'r') as fp1:
         l1 = l1.strip()
         query.append(l1)
 
-with open(sys.argv[2], 'r') as fp2 , open(sys.argv[3], 'r') as fp3:
+with open(sys.argv[2], 'r') as fp2 , open(sys.argv[3], 'w') as fp3:
     for l2 in fp2:
         l2 = l2.strip()
         # re.split 多个分隔符分割
