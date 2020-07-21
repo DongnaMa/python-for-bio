@@ -1,9 +1,15 @@
 '''
 This script can Filter gff3 files
-usage: python filter_gff3.py ID.txt input.gff3 out.gff3
 '''
+
 import sys
 import re
+
+USAGE = "\nusage: python %s filter_gff3.py ID.txt input.gff3 out.gff3\n" % sys.argv[0]
+
+if len(sys.argv) != 4:
+    print(USAGE)
+    sys.exit()
 
 query = []
 
