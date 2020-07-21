@@ -1,6 +1,6 @@
 import sys
 
-USAGE = "\nusage: python %s inputfile outputfile\n" % sys.argv[0]
+USAGE = "\nusage: python %s filter_empty_line.py inputfile outputfile\n" % sys.argv[0]
 
 if len(sys.argv) != 3:
     print(USAGE)
