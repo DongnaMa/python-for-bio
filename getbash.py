@@ -7,6 +7,17 @@ for i in range(261):
     f.close()
 
 
+   for i in range(30):
+    i_str = str(i+1)
+    file_name = 'run'+i_str + '.sh'
+    f = open(file_name,'w')
+    f.write('#!/bin/bash -x'+'\n'+'#PBS -N vasp'+i_str+'\n'+'#PBS -o vasp'+i_str+'.log'+'\n'+'#PBS -e vasp'+i_str+'.err'+'\n'+'#PBS -q workq'+'\n'+'#PBS -j oe'+'\n'+'#PBS -l nodes=1:ppn=1'+'\n'+'\n')
+    f.write("cd $PBS_O_WORKDIR")
+    f.close() 
+    
+    
+    
+    
 import re
 with open('all.id.txt') as f1:
     for i in range(279):
